@@ -1,0 +1,7 @@
+<odoo>
+  <record id="binding_company_rule" model="ir.rule">
+    <field name="name">World Office: empresas permitidas</field>
+    <field name="model_id" ref="model_xing_wo_binding"/>
+    <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+  </record>
+</odoo>
