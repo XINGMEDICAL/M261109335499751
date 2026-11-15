@@ -46,7 +46,7 @@ class WorldOfficeBinding(models.Model):
     def connector_info(self):
         self._authorise()
         return {
-            'protocol': 1, 'version': '20.0.1.1.0', 'max_batch': 50,
+            'protocol': 1, 'version': '20.0.1.1.1', 'max_batch': 50,
             'kinds': list(MODELS),
             'companies': self.env.user.company_ids.read(['id', 'name']),
             'employee_fields': ['name', 'wo_identification'],
